@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Code pull') {
             steps {
-                git branch: 'main', url: 'https://github.com/adpatidar/jenkins'
+                git branch: 'main', changelog: false, poll: false, url: 'https://github.com/adpatidar/jenkins.git'
             }
         }
         stage('build & run') {
