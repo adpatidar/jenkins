@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'tests' }
+    agent { label 'test1' }
     stages {
         stage('Code pull') {
             steps {
